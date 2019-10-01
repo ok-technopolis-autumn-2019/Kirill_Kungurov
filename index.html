@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>todos</title>
+</head>
+<body>
+	<div class="todos-wrapper">
+		<div class="todos-header">
+			<h1 class="todos-heading">todos</h1>
+		</div>
+		<div class="todos-table">
+			<div class="todos-table-header">
+				<input type="image" value="\/" alt="expand button" name="todos-table-header-button">
+				<input type="text" placeholder="What needs to be done?" name="todos-table-header-text">
+			</div>
+			<div class="todos-table-list">
+				<div class="todos-table-list-task">
+					<input type="checkbox" name="todos-table-list-task-checkbox">
+					<input type="text" name="todos-table-list-task-text" value="HTML">
+					<input type="image" value="x" alt="delete button" name="todos-table-list-task-deleteButton">
+				</div>
+				<div class="todos-table-list-task">
+					<input type="checkbox" name="todos-table-list-task-checkbox">
+					<input type="text" name="todos-table-list-task-text" value="CSS">
+					<input type="image" value="x" alt="delete button" name="todos-table-list-task-deleteButton">					
+				</div>				
+				<div class="todos-table-list-task">
+					<input type="checkbox" name="todos-table-list-task-checkbox">
+					<input type="text" name="todos-table-list-task-text" value="JS">
+					<input type="image" value="x" alt="delete button" name="todos-table-list-task-deleteButton">
+				</div>
+				<div class="todos-table-list-task">
+					<input type="checkbox" name="todos-table-list-task-checkbox">
+					<input type="text" name="todos-table-list-task-text" value="JS tools">
+					<input type="image" value="x" alt="delete button" name="todos-table-list-task-deleteButton">
+				</div>				
+			</div>
+			<form class="todos-table-footer">
+				<message class="todos-panel-actions-message">3 items left</message>
+				<li class="todos-table-footer-list-w">
+					<input type="radio" name="todos-table-footer-radio" value="all">
+					<label for="todos-table-footer-radio-All">All</label> 
+				</li>
+				<li class="todos-table-footer-list-w">
+					<input type="radio" name="todos-table-footer-radio" value="active">
+					<label for="todos-table-footer-radio-Active">Active</label>
+				</li>
+				<li class="todos-table-footer-list-w">
+					<input type="radio" name="todos-table-footer-radio" value="completed">
+					<label for="todos-table-footer-radio-Complited">Completed</label>
+				</li>
+				<message class="todos-panel-actions-message">Clear completed</message>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
