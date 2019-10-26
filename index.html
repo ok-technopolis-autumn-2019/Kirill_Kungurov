@@ -3,59 +3,128 @@
 <head>
 	<meta charset="utf-8">
 	<title>todos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
 </head>
 <body>
 	<div class="todos-wrapper">
-		<div class="todos-header">
-			<h1 class="todos-heading">todos</h1>
-		</div>
+		<header class="todos-header">
+			<h1 class="todos-header__text">todos</h1>
+		</header>
 		<div class="todos-table">
 			<div class="todos-table-header">
-				<button class="todos-table-header-button" aria-label="expand button">\/</button> 
-				<input type="text" placeholder="What needs to be done?" name="todos-table-header-text" autofocus="autofocus">
+				<input
+					type="button" 
+					class="todos-table-header__button" 
+					aria-label="expand button"
+					/>
+				<input 
+					type="text" 
+					class="todos-table-header__text" 
+					placeholder="What needs to be done?"
+					aria-label="Text of new task" 
+					autofocus="autofocus">
 			</div>
 			<div>
 			<ul class="todos-table__list">
 				<li class="todos-table__list__task">
-					<input type="checkbox" name="todos-table-list-task-checkbox">
-					<span name="todos-table-list-task-text">HTML</span>
-					<input type="button" value="X" aria-label="delete button">
+					<input 
+						type="checkbox" 
+						class="todos-table-list-task__checkbox" 
+						aria-label="Is checkbox active"/>
+					<label class="todos-table-list-task__check" for="HTML"></label>
+					<span class="todos-table-list-task__text">HTML</span>
+					<input 
+						type="button" 
+						class="todos-table-list-task__button" 
+						aria-label="delete button">
 				</li>
 				<li class="todos-table__list__task">
-					<input type="checkbox" name="todos-table-list-task-checkbox">
-					<span name="todos-table-list-task-text">CSS</span>
-					<input type="button" value="X" aria-label="delete button">
-				</li>				
-				<li class="todos-table__list__task">
-					<input type="checkbox" name="todos-table-list-task-checkbox">
-					<span name="todos-table-list-task-text">JS</span>
-					<input type="button" value="X" aria-label="delete button">
+					<input 
+						type="checkbox" 
+						class="todos-table-list-task__checkbox" 
+						aria-label="Is checkbox active"/>
+					<label class="todos-table-list-task__check" for="CSS"></label>
+					<span class="todos-table-list-task__text">CSS</span>
+					<input 
+						type="button" 
+						class="todos-table-list-task__button" 
+						aria-label="delete button">
 				</li>
 				<li class="todos-table__list__task">
-					<input type="checkbox" name="todos-table-list-task-checkbox">
-					<span name="todos-table-list-task-text">JS-tools</span>
-					<input type="button" value="X" aria-label="delete button">
-				</li>				
+					<input 
+						type="checkbox" 
+						class="todos-table-list-task__checkbox" 
+						aria-label="Is checkbox active"/>
+					<label class="todos-table-list-task__check" for="JS"></label>
+					<span class="todos-table-list-task__text">JS</span>
+					<input 
+						type="button" 
+						class="todos-table-list-task__button" 
+						aria-label="delete button">
+				</li>
+				<li class="todos-table__list__task">
+					<input 
+						type="checkbox" 
+						class="todos-table-list-task__checkbox" 
+						aria-label="Is checkbox active"/>
+					<label class="todos-table-list-task__check" for="JS-tools"></label>
+					<span class="todos-table-list-task__text">JS-tools</span>
+					<input 
+						type="button" 
+						class="todos-table-list-task__button" 
+						aria-label="delete button">
+				</li>
 			</ul>
 			</div>
-			<div class="todos-table-footer">
-				<message class="todos-panel-actions-message">3 items left</message>
-				<ul>
-					<li class="todos-table-footer__list-w">
-						<input type="radio" name="todos-table-footer-radio" value="all">
-						<label for="todos-table-footer-radio-All">All</label> 
-					</li>
-					<li class="todos-table-footer__list-w">
-						<input type="radio" name="todos-table-footer-radio" value="active">
-						<label for="todos-table-footer-radio-Active">Active</label>
-					</li>
-					<li class="todos-table-footer__list-w">
-						<input type="radio" name="todos-table-footer-radio" value="completed">
-						<label for="todos-table-footer-radio-Complited">Completed</label>
-					</li>
-				</ul>
-				<input type="button" name="todos-table-footer-button-clear" value ="Clear completed" aria-label="Clear all tasks">
-			</div>
+			<section class="todos-table-actions action-bar">
+				<div class="todos-table-actions__counter">
+					<span class="todos-table-actions__counter-text">3 items left</span>
+				</div>
+				<div class="todos-table-actions-filters">
+					<label class="todos-table-actions-filters__filter">
+						<input 
+							class="action-bar__radiobutton"
+							type="radio" 
+							name="action bar group"
+							value="all"
+							checked="checked" 
+						/>
+						<span class="action-bar__text" aria-label="Select all tasks">All</span>	
+					</label>
+					<label class="todos-table-actions-filters__filter">
+						<input 
+							class="action-bar__radiobutton"
+							type="radio" 
+							name="action bar group"
+							value="active"
+							checked="checked" 
+						/>
+						<span class="action-bar__text" aria-label="Select active tasks">Active</span>	
+					</label>
+					<label class="todos-table-actions-filters__filter">
+						<input 
+							class="action-bar__radiobutton"
+							type="radio" 
+							name="action bar group"
+							value="complited"
+							checked="checked" 
+						/>
+						<span class="action-bar__text" aria-label="Select completed tasks">Completed</span>	
+					</label>
+				</div>
+				<div class="todos-table-actions__clearAll">
+					<input 
+						type="button" 
+						class="todos-table-actions__clearAll-button" 
+						value="Clear completed"
+						aria-label="Clear all tasks"
+					/>
+				</div>
+			</section>
 		</div>
 	</div>
 </body>
