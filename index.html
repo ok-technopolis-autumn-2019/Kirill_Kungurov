@@ -3,123 +3,123 @@
 <head>
 	<meta charset="utf-8">
 	<title>todos</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
 </head>
 <body>
-	<div class="todos-wrapper">
-		<header class="todos-header">
-			<h1 class="todos-header__text">todos</h1>
+	<div class="todo-wrapper">
+		<header class="todo-header">
+			<h1 class="todo-header__text">todos</h1>
 		</header>
-		<div class="todos-table">
-			<div class="todos-table-header">
+		<div class="todo-table">
+			<div class="todo-table-header">
 				<input
 					type="button" 
-					class="todos-table-header__button" 
+					class="todo-table-header__button"
 					aria-label="expand button"
 					/>
 				<input 
 					type="text" 
-					class="todos-table-header__text" 
+					class="todo-table-header__text"
 					placeholder="What needs to be done?"
 					aria-label="Text of new task" 
 					autofocus="autofocus">
 			</div>
 			<div>
-			<ul class="todos-table__list">
-				<li class="todos-table__task">
+			<ul class="todo-table__list">
+				<li class="todo-task">
 					<input 
 						type="checkbox" 
-						class="todos-table-list-task__checkbox" 
+						class="todo-task__checkbox"
 						aria-label="Is checkbox active"/>
-					<label class="todos-table-list-task__check" for="HTML"></label>
-					<span class="todos-table-list-task__text">HTML</span>
+					<label class="todo-task__check" for="HTML"></label>
+					<span class="todo-task__text">HTML</span>
 					<input 
 						type="button" 
-						class="todos-table-list-task__button" 
+						class="todo-task__button"
 						aria-label="delete button">
 				</li>
-				<li class="todos-table__task">
-					<input 
-						type="checkbox" 
-						class="todos-table-list-task__checkbox" 
+				<li class="todo-task">
+					<input
+						type="checkbox"
+						class="todo-task__checkbox"
 						aria-label="Is checkbox active"/>
-					<label class="todos-table-list-task__check" for="CSS"></label>
-					<span class="todos-table-list-task__text">CSS</span>
-					<input 
-						type="button" 
-						class="todos-table-list-task__button" 
+					<label class="todo-task__check" for="CSS"></label>
+					<span class="todo-task__text">CSS</span>
+					<input
+						type="button"
+						class="todo-task__button"
 						aria-label="delete button">
 				</li>
-				<li class="todos-table__task">
-					<input 
-						type="checkbox" 
-						class="todos-table-list-task__checkbox" 
+				<li class="todo-task">
+					<input
+						type="checkbox"
+						class="todo-task__checkbox"
 						aria-label="Is checkbox active"/>
-					<label class="todos-table-list-task__check" for="JS"></label>
-					<span class="todos-table-list-task__text">JS</span>
-					<input 
-						type="button" 
-						class="todos-table-list-task__button" 
+					<label class="todo-task__check" for="JS"></label>
+					<span class="todo-task__text">JS</span>
+					<input
+						type="button"
+						class="todo-task__button"
 						aria-label="delete button">
 				</li>
-				<li class="todos-table__task">
-					<input 
-						type="checkbox" 
-						class="todos-table-list-task__checkbox" 
+				<li class="todo-task">
+					<input
+						type="checkbox"
+						class="todo-task__checkbox"
 						aria-label="Is checkbox active"/>
-					<label class="todos-table-list-task__check" for="JS-tools"></label>
-					<span class="todos-table-list-task__text">JS-tools</span>
-					<input 
-						type="button" 
-						class="todos-table-list-task__button" 
+					<label class="todo-task__check" for="JS-tools"></label>
+					<span class="todo-task__text">JS-tools</span>
+					<input
+						type="button"
+						class="todo-task__button"
 						aria-label="delete button">
 				</li>
 			</ul>
 			</div>
-			<section class="todos-table-actions action-bar">
-				<div class="todos-table-actions__counter">
-					<span class="todos-table-actions__counter-text">3 items left</span>
+			<section class="actions-bar">
+				<div class="actions-bar__counter">
+					<span class="actions-bar__counter-text">3 items left</span>
 				</div>
-				<div class="todos-table-actions-filters">
-					<label class="todos-table-actions-filters__filter">
+				<div class="actions-bar-filters">
+					<label class="actions-bar-filters__filter">
 						<input 
-							class="action-bar__radiobutton"
+							class="actions-bar__radiobutton"
 							type="radio" 
 							name="action bar group"
 							value="all"
 							checked="checked" 
 						/>
-						<span class="action-bar__text" aria-label="Select all tasks">All</span>	
+						<span class="actions-bar__text" aria-label="Select all tasks">All</span>
 					</label>
-					<label class="todos-table-actions-filters__filter">
+					<label class="actions-bar-filters__filter">
 						<input 
-							class="action-bar__radiobutton"
+							class="actions-bar__radiobutton"
 							type="radio" 
 							name="action bar group"
 							value="active"
 							checked="checked" 
 						/>
-						<span class="action-bar__text" aria-label="Select active tasks">Active</span>	
+						<span class="actions-bar__text" aria-label="Select active tasks">Active</span>
 					</label>
-					<label class="todos-table-actions-filters__filter">
+					<label class="actions-bar-filters__filter">
 						<input 
-							class="action-bar__radiobutton"
+							class="actions-bar__radiobutton"
 							type="radio" 
 							name="action bar group"
 							value="complited"
 							checked="checked" 
 						/>
-						<span class="action-bar__text" aria-label="Select completed tasks">Completed</span>	
+						<span class="actions-bar__text" aria-label="Select completed tasks">Completed</span>
 					</label>
 				</div>
-				<div class="todos-table-actions__clearall">
+				<div class="actions-bar__clearall">
 					<input 
 						type="button" 
-						class="todos-table-actions__clearall-button" 
+						class="actions-bar__clearall-button"
 						value="Clear completed"
 						aria-label="Clear all tasks"
 					/>

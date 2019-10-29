@@ -1,0 +1,26 @@
+.todo-table-header{
+	display: flex;
+	align-items: stretch;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.todo-table-header__button{
+	height: 50px;
+	width: 50px;
+	background: url("../Icons/select-all.svg");
+	background-position: center;
+	border: none;
+	background-repeat: no-repeat;
+}
+
+.todo-table-header__text{
+	display: flex;
+	padding: 0 10px;
+	font-style: normal;
+	align-items: center;
+	font-weight: 300;
+	font-size: 24px;
+	width: 100%;
+	border: none;
+	color: #888888;
+}

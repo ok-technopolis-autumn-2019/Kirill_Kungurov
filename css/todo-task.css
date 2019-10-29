@@ -1,0 +1,82 @@
+.todo-task {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.todo-task__checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+/*Костыль с background, чтобы крестик не менял цвет на серый*/
+.todo-task__button {
+	background: url("../Icons/close.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	height: 50px;
+	width: 50px;
+	flex-shrink: 0;
+	opacity: 0;
+}
+
+.todo-task__check {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.todo-task__text {
+    padding: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    width: 460px;
+    color: #666666;
+}
+
+.todo-task:hover
+.todo-task__button,
+.todo-task__button:focus {
+	opacity: 1;
+}
+
+.todo-task__checkbox:checked +
+.todo-task__check,
+.todo-task__checkbox:checked:hover +
+.todo-task__check {
+    border: 1px solid #5DC2AF;
+    background: url("../Icons/completed.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.todo-task__checkbox:checked ~
+.todo-task__text {
+    text-decoration-line: line-through;
+    color: #CCCCCC;
+}
+
+.todo-task:hover {
+    background: #FAFAFA;
+}
+
+.todo-task__checkbox:hover +
+.todo-task__check,
+.todo-task__checkbox:focus +
+.todo-task__check {
+    border: 1px solid #CCCCCC;
+}
