@@ -15,7 +15,7 @@
 
 /*Костыль с background, чтобы крестик не менял цвет на серый*/
 .todo-task__button {
-	background: url("../Icons/close.svg");
+	background: url("../icons/close.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	border: none;
@@ -59,7 +59,7 @@
 .todo-task__checkbox:checked:hover +
 .todo-task__check {
     border: 1px solid #5DC2AF;
-    background: url("../Icons/completed.svg");
+    background: url("../icons/completed.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
