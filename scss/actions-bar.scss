@@ -1,17 +1,18 @@
+@import "vars";
+@import "mixins";
 .actions-bar{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    background: #FFFFFF;
-    box-shadow: inset 0px -1px 0px #E6E6E6;
+    @include box-shadow($border-white);
 }
 
 .actions-bar__counter-text{
 	margin: 10px;
-	color: #888888;
+	color: $text-grey;
 	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: $font-weight;
+	font-size: $font-size;
 	display: flex;
 	align-items: center;
 }
@@ -24,11 +25,11 @@
 .actions-bar__clear-all-button{
 	font-family: Roboto, sans-serif;
 	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: $font-weight;
+	font-size: $font-size;
 	padding: 6px;
 
 	border: none;
-	background: #FFFFFF;
-	color: #888888;
+	background: $clear-white;
+	color: $text-grey;
 }

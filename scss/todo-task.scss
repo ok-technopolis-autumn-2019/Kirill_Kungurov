@@ -1,10 +1,11 @@
+@import "vars";
+@import "mixins";
 .todo-task {
     display: flex;
     align-items: center;
     min-height: 62px;
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    box-shadow: inset 0 -1px 0 #E6E6E6;
+    @include box-shadow($border-white)
 }
 
 .todo-task__checkbox {
@@ -16,14 +17,8 @@
 }
 
 .todo-task__button {
-	background-image: url("../icons/close.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-    background-color: transparent;
+    @include image($image-task-button-url, 20px);
 	border: none;
-    margin: 10px;
-	height: 20px;
-	width: 20px;
 	flex-shrink: 1;
 	opacity: 0;
 }
@@ -32,8 +27,8 @@
     display: flex;
     width: 40px;
     height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #E6E6E6;
+    background: $clear-white;
+    border: 1px solid $border-white;
     box-sizing: border-box;
     border-radius: 50%;
     margin: 10px;
@@ -43,12 +38,12 @@
     padding: 10px;
     width: 440px;
     font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: $font-weight;
+    font-size: $font-size-table;
     display: flex;
     align-items: center;
     word-break: break-all;
-    color: #666666;
+    color: $text-task;
 }
 
 .todo-task:hover
@@ -63,30 +58,25 @@
 .todo-task__check,
 .todo-task__checkbox:checked:focus +
 .todo-task__check{
-    width: 40px;
-    height: 40px;
+    @include image($image-done-task-button-url,40px);
     border: 1px solid #5DC2AF;
-    background-image: url("../icons/completed.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
 }
 
 .todo-task__checkbox:checked ~
 .todo-task__text {
     text-decoration-line: line-through;
-    color: #CCCCCC;
+    color: $text-light-grey;
 }
 
 .todo-task:hover {
-    background: #F2F2F2;
+    background: $actions-border-second;
 }
 
 .todo-task__checkbox:hover +
 .todo-task__check,
 .todo-task__checkbox:focus +
 .todo-task__check {
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    background: $clear-white;
+    border: 1px solid $text-light-grey;
     box-sizing: border-box;
 }

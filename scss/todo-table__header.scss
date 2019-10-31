@@ -1,31 +1,27 @@
+@import "vars";
+@import "mixins";
 .todo-table-header{
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
 	min-height: 62px;
-	background: #FFFFFF;
-	box-shadow: inset 0 -1px 0 #E6E6E6;
+	@include box-shadow($border-white);
+
 }
 
 .todo-table-header__button{
-	height: 40px;
-	width: 40px;
-	margin: 10px;
-	background-image: url("../icons/select-all.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
+	@include image($image-select-all-url,40px);
 	border: none;
 }
 
 .todo-table-header__text{
 	font-family: Roboto, sans-serif;
 	font-style: italic;
-	color: #CCCCCC;
+	color: $text-light-grey;
 	width: 100%;
 	padding: 10px;
-	font-weight: 300;
-	font-size: 24px;
+	font-weight: $font-weight;
+	font-size: $font-size-table;
 
 	display: flex;
 	align-items: center;
@@ -34,5 +30,5 @@
 }
 
 .todo-table-header__text::placeholder{
-    color: #CCCCCC;
+    color: $text-light-grey;
 }

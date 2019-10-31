@@ -1,0 +1,21 @@
+@import "vars";
+
+@mixin box-shadow($shadow-color){
+  background: $clear-white;
+  box-shadow: inset 0px -1px 0px $shadow-color;
+}
+
+@mixin box-extra-shadow(){
+  background: $clear-white;
+  box-shadow: 0 2px 4px $box-shadow;
+}
+
+@mixin image($url-to-image, $size){
+  height: $size;
+  width: $size;
+  margin: $image-margin;
+  background-image: $url-to-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}

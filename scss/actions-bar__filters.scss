@@ -1,3 +1,4 @@
+@import "vars";
 .actions-bar-filters__filter{
 	display: flex;
 	padding: 0 10px;
@@ -10,27 +11,27 @@
 
 .actions-bar__text{
 	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: $font-weight;
+	font-size: $font-size;
 	display: flex;
 	padding: 1px;
 	align-items: center;
-	border: 2px solid #FFFFFF;
-	color: #888888;
+	border: 2px solid $clear-white;
+	color: $text-grey;
 	border-radius: 5px;
 }
 
 .actions-bar__radiobutton:checked + .actions-bar__text,
 .actions-bar__radiobutton:checked:hover + .actions-bar__text{
-	background: #FFFFFF;
-	border: 2px solid #E6E6E6;
+	background: $clear-white;
+	border: 2px solid $border-white;
 	border-radius: 5px;
 }
 
 .actions-bar__radiobutton:hover + .actions-bar__text,
 .actions-bar__radiobutton:focus	 + .actions-bar__text{
-	background: #FFFFFF;
-	border: 2px solid #F2F2F2;
+	background: $clear-white;
+	border: 2px solid $actions-border-second;
 	border-radius: 5px;
 	transition-duration: 0.2s;
 }

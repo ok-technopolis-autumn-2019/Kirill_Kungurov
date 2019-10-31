@@ -1,10 +1,11 @@
+@import "vars";
 body,
 html {
 	font-family: Roboto, sans-serif;
 	line-height: 21px;
 	margin: 0;
 	padding: 0;
-	background-color: #F2F2F2;
+	background-color: $actions-border-second;
 }
 
 .todo-wrapper{
@@ -15,7 +16,7 @@ html {
 
 .todo-header__text{
 	font-style: normal;
-	font-weight: 200;
-	font-size: 100px;
-	color: #CCCCCC;
+	font-weight: $font-weight-header;
+	font-size: $font-size-header;
+	color: $text-light-grey;
 }
