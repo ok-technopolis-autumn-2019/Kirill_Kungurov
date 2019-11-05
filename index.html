@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>todos</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
 	<link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap&subset=cyrillic"
       rel="stylesheet"
@@ -20,13 +20,14 @@
 					type="button" 
 					class="todo-table-header__button"
 					aria-label="expand button"
-					/>
+				/>
 				<input 
 					type="text" 
 					class="todo-table-header__text"
 					placeholder="What needs to be done?"
 					aria-label="Text of new task" 
-					autofocus="autofocus">
+					autofocus="autofocus"
+				/>
 			</div>
 			<div>
 			<ul class="todo-table__list">
@@ -110,16 +111,16 @@
 							class="actions-bar__radiobutton"
 							type="radio" 
 							name="action bar group"
-							value="complited"
+							value="completed"
 							checked="checked" 
 						/>
 						<span class="actions-bar__text" aria-label="Select completed tasks">Completed</span>
 					</label>
 				</div>
-				<div class="actions-bar__clearall">
+				<div class="actions-bar__clear-all">
 					<input 
 						type="button" 
-						class="actions-bar__clearall-button"
+						class="actions-bar__clear-all-button"
 						value="Clear completed"
 						aria-label="Clear all tasks"
 					/>
